@@ -5,9 +5,9 @@ const StateContext = createContext()
 export const StateContextProvider = ({children})=> {
 
         const [weather,setWeather] = useState({})
-        const [values,setValues] = useState({})
+        const [values,setValues] = useState([])
         const [place,setPlace] = useState('New York')
-        const[location,setLocation] = useState('')
+        const[thislocation,setLocation] = useState('')
 
         const fetchWeather = async() => {
 
@@ -53,7 +53,7 @@ return(<StateContext.Provider value ={{
     weather,
     setPlace,
     values,
-    location
+    thislocation
 }}>
 
 

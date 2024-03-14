@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+
 import React, { useEffect, useState } from 'react'
 import sun from '../assets/icons/sunny.png'
 import cloud from '../assets/icons/cloud.png'

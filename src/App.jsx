@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import search from './assets/search.svg'
+import { useStateContext } from './Context'
 
 function App() {
   
   const [input,setInput]= useState('')
+  const {weather} = useStateContext()
+  console.log(weather)
   return (
     <div className='w-full h-screen text-white px-8'>
       <nav className='w-full p-3 flex justify-between items-center'>

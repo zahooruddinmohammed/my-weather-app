@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import search from './assets/search.svg'
 import { useStateContext } from './Context'
+import BackgroundLayout from './Components/BackgroundLayout'
 
 function App() {
   
@@ -21,7 +22,9 @@ function App() {
           }
         }} type='text' className='focus:outline-none w-full text-[#212121] text-lg' value={input} onChange={e => setInput(e.target.value)}/>
       </div>
+
       </nav>  
+      <BackgroundLayout></BackgroundLayout>
     </div>
   )
 }
